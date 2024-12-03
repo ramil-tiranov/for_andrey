@@ -1,0 +1,17 @@
+.star-rating {
+  font-size: 24px; /* Размер звезд */
+  color: gold; /* Цвет заполненных звезд */
+}
+
+.star {
+  margin: 0 2px; /* Отступ между звездами */
+  transition: color 0.2s; /* Плавный переход цвета */
+}
+
+.star.filled {
+  color: gold; /* Цвет заполненной звезды */
+}
+
+.star:not(.filled) {
+  color: lightgray; /* Цвет пустой звезды */
+}

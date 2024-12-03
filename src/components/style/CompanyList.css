@@ -1,0 +1,122 @@
+.company-list-container {
+  padding: 20px;
+}
+
+.company-list-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.company-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Добавляем указатель на всю карточку */
+}
+
+.company-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.company-link {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Наследуем цвет от родительского элемента */
+  display: block; /* Чтобы весь блок карточки стал ссылкой */
+  height: 100%; /* Обеспечиваем, что ссылка охватывает всю карточку */
+}
+
+.company-card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.company-feedbacks {
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.company-card-body {
+  margin-top: 15px;
+}
+
+.company-logo-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.company-logo {
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+.no-logo {
+  font-style: italic;
+  color: #888;
+}
+
+.company-info p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+  .company-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .company-name {
+    font-size: 1.3rem;
+  }
+
+  .company-feedbacks {
+    font-size: 1rem;
+  }
+
+  .company-logo {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}

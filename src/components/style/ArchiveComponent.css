@@ -1,0 +1,79 @@
+/* Архивная страница */
+.archive-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .archive-main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .archive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .archive-table th, .archive-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .archive-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .archive-table td {
+    background-color: #f2f2f2;
+  }
+  
+  .archive-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .archive-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .archive-table td {
+    word-wrap: break-word;
+    max-width: 200px;
+  }
+  
+  .archive-table p {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Дополнительные стили для элементов */
+  .archive-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .archive-main p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  

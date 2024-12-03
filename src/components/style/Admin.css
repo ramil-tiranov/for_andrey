@@ -1,0 +1,115 @@
+/* Reset styles for body and html to prevent side scroll */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* Ensure the main container fills the screen correctly */
+.employee-list-container {
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff); /* Gradient background */
+  min-height: 100vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main content styling */
+.employee-list-main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+  font-size: 1.5rem;
+  color: #00796b; /* Dark teal color */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Employee List */
+.employee-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Employee Item */
+.employee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.employee-item:hover {
+  transform: scale(1.02);
+}
+
+/* Profile Info Styling */
+.employee-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #00796b;
+}
+
+.employee-info p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Fix the side scroll by setting proper width and overflow handling */
+html, body {
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.employee-list-container {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Make layout responsive */
+@media (max-width: 768px) {
+  .employee-list-main {
+    padding: 15px;
+  }
+  .employee-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .employee-info h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small screens adjustments */
+@media (max-width: 480px) {
+  .employee-info p {
+    font-size: 0.8rem;
+  }
+  .employee-info h3 {
+    font-size: 1rem;
+  }
+}

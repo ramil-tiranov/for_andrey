@@ -1,0 +1,119 @@
+/* Profile.css */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  padding: 20px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.profile-header {
+  color: #333;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+.rating-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.star.selected {
+  color: #ffb400;
+}
+
+.star:hover {
+  color: #ffb400;
+}
+
+
+.profile-image-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  object-fit: cover;
+}
+
+.profile-info-column,
+.profile-contact-column {
+  flex: 2;
+  padding: 10px;
+  color: #555;
+}
+
+.profile-info {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.profile-button {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.profile-button:hover {
+  background-color: #45a049; /* чуть темнее при наведении */
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.success-message {
+  color: #5cb85c;
+  font-weight: bold;
+}
